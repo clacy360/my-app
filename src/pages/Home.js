@@ -20,7 +20,7 @@ export default function Home() {
                         <li key={index}>{item}</li>
                     ))}
                 </ul>
-                <button onClick={reorderList}>Reorder List</button>
+                <button className="button-1" onClick={reorderList}>Reorder List</button>
             </div>
         )
     }
@@ -33,25 +33,24 @@ export default function Home() {
                 <p>
                     Welcome to my website!
                 </p>
-                <br />
-
-
-
-                <img src={SnorlaxSleep} className="Home-logo" alt="logo" />
+                
+                <img src={SnorlaxSleep} className="Home-logo" />
 
 
                 <subtitle className="Home-subtitle">
                     <br />
-                    <p>
-                        My name is Cami Lacy, and I am a graduating senior from the University of Washington Bothell. I am majoring in Computer Science and Software Engineering while planning to attend my third summer interning at Dell Technologies.
-                    </p>
-                    <br />
-                    <p>
+                    <p className="Home-subtitle">
+                        My name is Cami Lacy, and I am a graduating senior from the University of Washington 
+                        Bothell. 
+                        <br></br>
+                        <br></br>
+                        I am majoring in Computer Science and Software Engineering while planning 
+                        to attend my third summer interning at Dell Technologies.
+                        <br></br>
+                        <br></br>
                         List of my interests:
+                        <ListWithButton />
                     </p>
-
-                    <ListWithButton />
-                    <br />
 
                 </subtitle>
             </header>

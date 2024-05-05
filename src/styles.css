@@ -2,9 +2,11 @@
     box-sizing: border-box;
 }
 
-body{
-    margin: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
+
 
 .container{
     margin: 1rem;
@@ -26,7 +28,7 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -40,11 +42,16 @@ body{
 }
 
 .nav ul{
-    padding: 0;
-    margin: 0;
+    padding: 10px;
+    margin: 0 1rem 0 0;
     list-style: none;
     display: flex;
     gap: 1rem;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.nav li{
+  padding: 5px;
 }
 
 .nav a{
@@ -57,12 +64,19 @@ body{
 }
 
 .nav li.active{
-    background-color: #d8e0fa;
+  font-weight: 800;
+    /* background-color: hsl(226, 100%, 76%);
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px; */
+
 }
 
-.nav li:hover{
-    background-color: #bdcbfa;
-}
+/* .nav li:hover{
+     background-color: #bdcbfa;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px; 
+    
+} */
 
 /* Old stuff */
 
@@ -77,31 +91,41 @@ body{
   
   @media (prefers-reduced-motion: no-preference) {
     .Home-logo {
+      height: 50vh;
+      width: 100vh;
       animation: none;
     }
   }
+
+
   
   .Home-header {
-    background-color: #282c34;
-    min-height: 200vh;
+    background-color: #011949;
+    min-height: 160vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(20px + 2vmin);
+    font-weight: 500;
     color: white;
   }
   
   .Home-subtitle {
-    background-color: #282c34;
-    min-height: 30vh;
-    padding: 0 200px;
+    background-color: #011949;
+    min-height: 50vh;
+    padding: 0 160px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: left;
     font-size: calc(5px + 2vmin);
+    font-weight: 300;
     color: white;
+  }
+  
+  .Home-subtitle p{
+    text-align: left;
   }
   
   .Home-link {
@@ -110,24 +134,58 @@ body{
   
   .ThingsToRead-header {
 
-    background-color: #282c34;
+    background-color: #011949;
+    padding: 0 0 0 5rem; 
     min-height: 130vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     font-size: calc(20px + 2vmin);
+    font-weight: 500;
     color: white;
   }
 
   .ThingsToRead-subtitle {
-    background-color: #282c34;
+    background-color: #011949;
+    padding: 0 0 0 5rem; 
     min-height: 30vh;
-    padding: 0 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     font-size: calc(5px + 2vmin);
     color: white;
   }
+
+  /* <!-- HTML !-->
+  <button class="button-1" role="button">Button 1</button> */
+  
+  /* CSS */
+  .button-1 {
+    background-color: #ffffff;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
